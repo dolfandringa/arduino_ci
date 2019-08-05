@@ -164,7 +164,7 @@ class String: public string
       replace(String(target), String(repl));
     }
     void remove(unsigned int index) { assign(substr(0, index)); }
-    void remove(unsigned int index, unsigned int count) { assign(substr(0, index) + substr(min(length(), index + count), count)); }
+    void remove(unsigned int index, unsigned int count) { assign(substr(0, index) + substr(get_min(length(), index + count), count)); }
     void toLowerCase(void) { std::transform(begin(), end(), begin(), ::tolower); }
     void toUpperCase(void) { std::transform(begin(), end(), begin(), ::toupper); }
 

@@ -14,13 +14,13 @@
 #endif
 #define abs(x) ((x)>0?(x):-(x))
 
-#ifdef max
-#undef max
+#ifdef get_max
+#undef get_max
 #endif
-#define max(a,b) ((a)>(b)?(a):(b))
+#define get_max(a,b) ((a)>(b)?(a):(b))
 
-#ifdef min
-#undef min
+#ifdef get_min
+#undef get_min
 #endif
-#define min(a,b) ((a)<(b)?(a):(b))
+#define get_min(a,b) ((a)<(b)?(a):(b))
 
