@@ -171,7 +171,7 @@ class Stream : public Print
     // returns the number of characters placed in the buffer (0 means no valid data found)
     size_t readBytesUntil(char terminator, char *buffer, size_t length) {
       size_t idx = mGodmodeDataIn->find(terminator);
-      size_t howMuch = idx == String::npos ? length : get_min(length, idx);
+      size_t howMuch = idx == String::npos ? length : min(length, idx);
       return readBytes(buffer, howMuch);
     }
 

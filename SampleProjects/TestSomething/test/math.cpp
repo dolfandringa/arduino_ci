@@ -24,20 +24,20 @@ unittest(map)
   assertEqual(-4, map(26, 0, 50, 100, -100));
 }
 
-unittest(get_max)
+unittest(max)
 {
-  assertEqual(4, get_max(3, 4));
-  assertEqual(5, get_max(3.0, 5));
-  assertEqual(6.0, get_max(-4, 6.0));
-  assertEqual(7.0, get_max(5.0, 7.0));
+  assertEqual(4, max(3, 4));
+  assertEqual(5, max(3.0, 5));
+  assertEqual(6.0, max(-4, 6.0));
+  assertEqual(7.0, max(5.0, 7.0));
 }
 
-unittest(get_min)
+unittest(min)
 {
-  assertEqual(3, get_min(3, 4));
-  assertEqual(3.0, get_min(3.0, 5));
-  assertEqual(-4, get_min(-4, 6.0));
-  assertEqual(5.0, get_min(5.0, 7.0));
+  assertEqual(3, min(3, 4));
+  assertEqual(3.0, min(3.0, 5));
+  assertEqual(-4, min(-4, 6.0));
+  assertEqual(5.0, min(5.0, 7.0));
 }
 
 unittest(pow)
